@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&useUnicode=true
+  jpa:
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      use-new-id-generator-mappings: false
+  jackson:
+    default-property-inclusion: non_null
+#  redis:
+#    host: 192.168.1.103
+#    port: 6379
+server:
+  servlet:
+    context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+
+wechat:
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 47ccc303338cee6e62894f
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://sell.natapp4.cc/sell/pay/notify
+
+
+
+
